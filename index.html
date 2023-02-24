@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_quries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script
+      src="https://kit.fontawesome.com/a4645a090c.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <script>
+      // const toggleButton = document.getElementById("nav_toggle");
+      // const navLinks = document.getElementById("nav_icon_links");
+      // toggleButton.addEventListener("click", () => {
+      //   navLinks.classList.toggle("active");
+      // });
+
+      $(document).ready(function () {
+        $("#nav_toggle").click(function () {
+          $("ul").toggleClass("show");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!----------------- Header section or Navbar Section  -------------------->
+    <header>
+      <a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+      <nav>
+        <ul class="nav_icon_links">
+          <li class="list"><a href="#home">HOME</a></li>
+          <li class="list"><a href="#menu">MENU</a></li>
+          <li class="list"><a href="#about">ABOUT</a></li>
+          <li class="list"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="nav_links">
+        <a href="#"><i class="bx bx-search-alt"></i></a>
+        <a href="#" class="nav_toggle" id="nav_toggle"
+          ><i class="bx bx-menu"></i
+        ></a>
+      </div>
+    </header>
+    <!---------------------------- Home Section ------------------>
+    <section id="home">
+      <div class="container">
+        <div class="home-text">
+          <h1>
+            <span>Burgers!</span><br />
+            Because no great story started with salad ...
+          </h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.Perferendis
+            magnam numquam aliquam dolores.
+          </p>
+          <a href="#" class="btn">Choose your One</a>
+        </div>
+        <div class="home-image">
+          <img src="images/burger_slide.png" alt="burger" />
+        </div>
+      </div>
+    </section>
+    <!------------- MENU SECTIONS -------------->
+
+    <section id="menu">
+      <!---------------- ALL MENU ITEMS ----------------->
+      <div class="container">
+        <div class="menu-heading"><h1>Our Menu's</h1></div>
+        <div class="menu-items">
+          <!-------------- ITEM ONE ------------>
+          <div class="row">
+            <img src="images/burger 1.png" alt="burger1" />
+            <div class="menu1-text">
+              <div class="heading-left"><h4>Tasty Burger</h4></div>
+              <div class="price-right"><h5>₹100</h5></div>
+              <div class="menu-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Perspiciatis incidunt quibusdam nostrum optio.
+              </div>
+              <a href="#" class="order">Order</a>
+            </div>
+          </div>
+
+          <!---------------- ITEM TWO------------- -->
+          <div class="row">
+            <img src="images/burgur 2.png" alt="burger2" />
+            <div class="menu1-text">
+              <div class="heading-left"><h4>Twin Burgers</h4></div>
+              <div class="price-right"><h5>₹160</h5></div>
+              <div class="menu-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Perspiciatis incidunt quibusdam nostrum optio.
+              </div>
+              <a href="#" class="order">Order</a>
+            </div>
+          </div>
+
+          <!------------------------ ITEM THREE----------------- -->
+          <div class="row">
+            <img class="img3" src="images/burgur 3.png" alt="burger3" />
+            <div class="menu1-text">
+              <div class="heading-left"><h4>Tasty Burger</h4></div>
+              <div class="price-right"><h5>₹110</h5></div>
+              <div class="menu-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Perspiciatis incidunt quibusdam nostrum optio.
+              </div>
+              <a href="#" class="order">Order</a>
+            </div>
+          </div>
+
+          <!------------------ITEM FOUR ------------------- -->
+          <div class="row">
+            <img src="images/Pizza.png" alt="pizza" />
+            <div class="menu1-text">
+              <div class="heading-left"><h4>Special Pizza</h4></div>
+              <div class="price-right"><h5>₹560</h5></div>
+              <div class="menu-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Perspiciatis incidunt quibusdam nostrum optio.
+              </div>
+              <a href="#" class="order">Order</a>
+            </div>
+          </div>
+
+          <!----------------- ITEM FIVE------------------ -->
+
+          <div class="row">
+            <img src="images/Pasta.png" alt="pasta" />
+            <div class="menu1-text">
+              <div class="heading-left"><h4>White Sauce Pasta</h4></div>
+              <div class="price-right"><h5>₹210</h5></div>
+              <div class="menu-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Perspiciatis incidunt quibusdam nostrum optio.
+              </div>
+              <a href="#" class="order">Order</a>
+            </div>
+          </div>
+
+          <!--------------ITEM SIX ------------ -->
+          <div class="row">
+            <img src="images/French fries.png" alt="french fries" />
+            <div class="menu1-text">
+              <div class="heading-left"><h4>French Fries</h4></div>
+              <div class="price-right"><h5>₹90</h5></div>
+              <div class="menu-details">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Perspiciatis incidunt quibusdam nostrum optio.
+              </div>
+              <a href="#" class="order">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="see-more"><a href="#">See More</a></div>
+      </div>
+    </section>
+    <!------------ POPULAR DISHES ------------>
+    <section id="popular-dishes">
+      <h2>Popular Dishes</h2>
+      <div class="star">
+        <a href="#"><i class="bx bxs-star"></i></a>
+        <a href="#"><i class="bx bxs-star"></i></a>
+        <a href="#"><i class="bx bxs-star"></i></a>
+        <a href="#"><i class="bx bxs-star"></i></a>
+        <a href="#"><i class="bx bxs-star-half"></i></a>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <div class="grid_item">
+            <div class="card">
+              <img src="images/rs7.jpg" alt="rs1" />
+              <div class="card_text">
+                <h3>Dishes Name</h3>
+              </div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <div class="card">
+              <img src="images/rs8.jpg" alt="rs2" />
+              <div class="card_text">
+                <h3>Dishes Name</h3>
+              </div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <div class="card">
+              <img src="images/rs3.jpg" alt="rs3" />
+              <div class="card_text">
+                <h3>Dishes Name</h3>
+              </div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <div class="card">
+              <img src="images/rs8.jpg" alt="rs4" />
+              <div class="card_text">
+                <h3>Dishes Name</h3>
+              </div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <div class="card">
+              <img src="images/rs5.jpg" alt="rs5" />
+              <div class="card_text">
+                <h3>Dishes Name</h3>
+              </div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <div class="card">
+              <img src="images/rs6.jpg" alt="rs6" />
+              <div class="card_text">
+                <h3>Dishes Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------- FOOTER SECTION OR CONTACT US SECTION -------------->
+    <section id="contact_us">
+      <div class="container">
+        <div class="footer_container">
+          <!-- <div class="footer_colomn_one">
+            <a href="#"><i class="bx bxl-pinterest-alt"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div> -->
+          <div class="footer_colomn first_colomn">
+            <h4>Service</h4>
+            <a href="#" class="hover_link">contact us</a>
+            <a href="#" class="hover_link">ph-9051861522</a>
+            <a href="#" class="hover_link">email-rounak.bony.dey@gmail.com</a>
+            <a href="#" class="hover_link">services</a>
+          </div>
+          <div class="footer_colomn second_colomn">
+            <h4>Service</h4>
+            <a href="#" class="hover_link">contact us</a>
+            <a href="#" class="hover_link">ph-9051861522</a>
+            <a href="#" class="hover_link">email-rounak.bony.dey@gmail.com</a>
+            <a href="#" class="hover_link">services</a>
+          </div>
+          <div class="footer_colomn third_colomn">
+            <h4>Service</h4>
+            <a href="#" class="hover_link">contact us</a>
+            <a href="#" class="hover_link">ph-9051861522</a>
+            <a href="#" class="hover_link">email-rounak.bony.dey@gmail.com</a>
+            <a href="#" class="hover_link">services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------ SUB FOOTER OR @Copyright SECTION ------------->
+    <section id="sub_footer">
+      <div class="container">
+        <div class="sub_footer_icon">
+          <a href="#"><i class="bx bxl-pinterest-alt"></i></a>
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="sub_footer_text">spiyco is on instagram now!</div>
+      </div>
+    </section>
+  </body>
+</html>
